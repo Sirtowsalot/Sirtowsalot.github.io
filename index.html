@@ -7,21 +7,23 @@
 	<script type="text/javascript" src="source/index/buttons_index.js"></script>
 	<button onclick="topFunction()" id="pgupBtn" title="Sends you to the top of this page">Go to top</button>
 	<link rel="stylesheet" href="source/index/main-css.css">
+	<link rel="stylesheet" href="source/index/mylogo.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:700|Playfair+Display" rel="stylesheet">
 </head>
 <body>
-<div id="">
-	<div id="pageHead">
-		<div> 
-			<ul class="nav nav-tabs" id="myTab">
-				<li class="right navLi"><a class="tablinks rightMostListItem" onclick="tabBar(event, 'Sitemap')">Sitemap</a></li>
-				<li class="right navLi"><a class="tablinks" onclick="tabBar(event, 'Other')">Other<span class="dot"></span></a></li>
-				<li class="right navLi"><a class="tablinks" onclick="tabBar(event, 'About')">About This Page<span class="dot"></span></a></li>
-				<li class="right navLi active"><a class="tablinks" id="defaultHome" onclick="tabBar(event, 'Home')">Home<span class="dot"></span></a></li>
-				<li class="navLi navBarTitle"><a class="navBarTitle" onclick="window.location.href='https://sirtowsalot.github.io/'"><img src="images/myname.png" width="30" height="30"></a></li>
-			</ul>
-		</div>
+<center><img src="images/myname.png" class="headerlogo"></center>
+<div id="pageHead">
+	<div> 
+		<ul class="nav nav-tabs" id="myTab">
+			<li class="right navLi"><a class="tablinks rightMostListItem" onclick="tabBar(event, 'Sitemap')">Sitemap</a></li>
+			<li class="right navLi"><a class="tablinks" onclick="tabBar(event, 'Other')">Other<span class="dot"></span></a></li>
+			<li class="right navLi"><a class="tablinks" onclick="tabBar(event, 'About')">About<span class="dot"></span></a></li>
+			<li class="right navLi active"><a class="tablinks" id="defaultHome" onclick="tabBar(event, 'Home')">Home<span class="dot"></span></a></li>
+		</ul>
 	</div>
-	<div class="tab-content" id="mainFGRND , mainBGRND">
+</div>
+<div id="mainBGRND">
+	<div class="tab-content" id="mainFGRND">
 		<div id="Home" class="tabcontent tab-pane active">
 			<div id="Clock">
 				<center><iframe src="source/clock/clock.html" scrolling="no"></iframe>

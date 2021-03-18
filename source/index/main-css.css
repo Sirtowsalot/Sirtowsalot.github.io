@@ -2,12 +2,22 @@
     display: none;
 }
 html {
-	font-family: Roboto;
+	Font-Family: 'Playfair Display', Serif;
 }
 body  {
-  background-image: url(//webcore.unm.edu/v2/images/stucco.png);
-  background-attachment: fixed;
-  background-color:rgb(218, 218, 218);
+background-color:black;
+background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+.headerlogo {
+	margin-top: 1.5%;
+	width: 20%;
+	height: 20%;
 }
 #mainBGRND {
   margin: 2.5%;
@@ -54,7 +64,8 @@ hr {
     margin-right: 240px;
     border-style: solid;
     border-width: 1px;
-} 
+}
+
 a:link {
     color: #7A8890;
 }
@@ -100,23 +111,22 @@ iframe	  {
 /* Style the tab */
 .nav {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	padding-left: 2%;
+	padding-right: 2%;
     overflow: hidden;
-    border-bottom: 1px solid #e7e7e7;
-    background-color: white;
 }
 
 .right {
-    float: right;
+    float: right; 
     font-size: 20px;
 }
 
 .navLi a {
-    display: block;
-    color: black;
-    font-family: inherit;
-    font-weight: lighter;
+    Font-Family: 'PT Sans', Sans-Serif;
+	display: block;
+    color: #7DCCFF;
     text-align: center;
     padding: 10px 0px 10px 0px;
     text-decoration: none;
@@ -129,15 +139,15 @@ iframe	  {
 }
 
 .navLi a.active {
-    color: black;
-    font-weight: 900;
+    color: #1190CB;
+    font-weight: light;
     background-color: inherit;
 }
 .dot {
     height: 2px;
     width: 2px;
     top: 0;
-    background-color: gray;
+    background-color: inherit;
     border-radius: 80%;
     display: inline-block;
     margin-left: 8px;
@@ -153,7 +163,6 @@ iframe	  {
 	font-family: Roboto, sans-serif;
     margin-left: 8px;
     font-weight: 900;
-    font-size: 25px;
 	cursor: default;
 }
 /* ===============================================   FOOTER CODE ============== FOOTER CODE ================ FOOTER CODE ============ FOOTER CODE =================================================== */
@@ -223,6 +232,6 @@ button {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 2s ease-out;
   background-color: #f1f1f1;
 }
